@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyBank | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>MyBank</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="bank.html">Bank</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<main class="container">
+
+  <h2>Bank Dashboard</h2>
+
+  <div class="box">
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="text" id="account" placeholder="Account Number">
+    <button onclick="createAccount()">Create Account</button>
+  </div>
+
+  <div class="box">
+    <input type="number" id="amount" placeholder="Enter Amount">
+    <button onclick="deposit()">Deposit</button>
+    <button onclick="withdraw()">Withdraw</button>
+  </div>
+
+  <div class="box info">
+    <p><b>Name:</b> <span id="showName">---</span></p>
+    <p><b>Account:</b> <span id="showAccount">---</span></p>
+    <p><b>Balance:</b> $<span id="balance">0</span></p>
+  </div>
+
+  <div class="box">
+    <h3>Transaction History</h3>
+    <ul id="history"></ul>
+  </div>
+  <button onclick="clearHistory()">Clear Transaction History</button>
+  <button onclick="clearAccount()">Clear Account Info</button>
+
+</main>
+
+<script src="script.js"></script>
+<footer>© 2026 MyBank System</footer>
+</body>
+</html>
